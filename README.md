@@ -6,6 +6,10 @@
 
 **[實際運作網站（Live Website）](https://mahjongfriend.twsites.workers.dev/)**
 
+![週末麻將團示範房間（Demo Data）](docs/images/original-application/01-demo-room.png)
+
+真正網站 UI 在本機 Demo 房間呈現玩家、結算與戰績，阿明、小宇、小安、小傑均為虛構玩家，使用預設頭貼並明示 Demo Data。
+
 ## 功能與系統架構
 
 原始網站使用 Cloudflare Workers、D1 資料庫及相關雲端服務，處理帳號、群組、牌局結算、排行榜等功能。
