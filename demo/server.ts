@@ -1,0 +1,15 @@
+import { serve } from '@hono/node-server';
+import { serveStatic } from '@hono/node-server/serve-static';
+import { Hono } from 'hono';
+import app from '../src/api/index';
+import { environment, seed, origin } from './environment';
+const f=environment();
+const seeded=await seed(f);
+const host=new Hono();
+host.get('/demo/start',c=>{c.header('Set-Cookie',seeded.cookie+'; HttpOnly; SameSite=Lax; Path=/');return c.redirect('/')});
+host.all('/api/*',c=>app.fetch(c.req.raw,f.env));
+host.all('/images/*',c=>app.fetch(c.req.raw,f.env));
+host.use('*',serveStatic({root:'./dist'}));
+host.get('*',serveStatic({path:'./dist/index.html'}));
+serve({fetch:host.fetch,port:8787,hostname:'127.0.0.1'});
+console.log(`${origin}/demo/start — synthetic only, memory SQLite, no cloud services`);

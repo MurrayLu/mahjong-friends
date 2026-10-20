@@ -1,0 +1,105 @@
+file,classification,source_commit,description
+.gitattributes,new,,New isolated demo / portfolio packaging; not original application
+.gitignore,new,,New isolated demo / portfolio packaging; not original application
+demo/environment.ts,new,,New isolated demo / portfolio packaging; not original application
+demo/server.ts,new,,New isolated demo / portfolio packaging; not original application
+demo/sqlite.ts,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,SQLite adapter reused locally; memory database and original migrations
+docs/VALIDATION.md,new,,New isolated demo / portfolio packaging; not original application
+FILE_ORIGINS.csv,new,,New isolated demo / portfolio packaging; not original application
+index.html,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0001_foundation.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0002_session_hand_count.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0003_player_avatar_highlight_amount.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0004_media_metadata.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0005_anonymous_identity.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0006_group_member_access_level.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0007_room_governance.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0008_media_purpose_byte_limits.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0009_fun_engine.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0010_table_appeal.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0011_account_personalization.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0012_reconcile_account_names.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0013_highlight_interactions.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0014_site_observability.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+migrations/0015_group_rate_presets.sql,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+package-lock.json,new,,New isolated demo / portfolio packaging; not original application
+package.json,new,,New isolated demo / portfolio packaging; not original application
+public/brand/illustration.svg,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,; Publication correction: Isolated Demo label or replacement newly authored SVG; original artwork excluded.
+public/brand/mark.svg,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,; Publication correction: Isolated Demo label or replacement newly authored SVG; original artwork excluded.
+public/brand/wordmark.svg,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,; Publication correction: Isolated Demo label or replacement newly authored SVG; original artwork excluded.
+public/favicon.svg,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,; Publication correction: Isolated Demo label or replacement newly authored SVG; original artwork excluded.
+README.md,new,,New isolated demo / portfolio packaging; not original application
+SOURCE_MANIFEST.json,new,,New isolated demo / portfolio packaging; not original application
+src/api/auth.ts,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,Remove external OAuth implementation; local anonymous auth retained
+src/api/group-realtime.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/api/index.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/api/site-admin.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/fun-engine.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/governance.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/highlight-social.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/identity.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/media.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/mobile-queries.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/player-analysis.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/service.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/application/site-admin.ts,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,Replace hard-coded personnel contact with reserved admin@example.invalid; no original personal contact published.
+src/application/table-appeal.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/domain/model.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/domain/rate-presets.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/domain/rules.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/activity.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/app.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/brand-landing.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/brand.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/brand.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/collections.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/delayed-loading.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/flows.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/fun-pages.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/fun.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/highlight-actions.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/home-activity.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/homepage-polish.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/image-processing.ts,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,HEIC decoder removed; no LGPL binary bundled
+src/frontend/ko-empty-state.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/mahjong-tile.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/main.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/membership.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/mobile-api.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/mobile-logic.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/player-analysis.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/polish-logic.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/polish.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/rate-preset-editor.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/rate-presets.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/report-image.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/reports.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/reports.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/room-deletion.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/room-preference.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/session-history.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/site-admin.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/site-admin.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/style.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/table-appeal.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/ting-calculator.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/ting.css,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/frontend/ui.tsx,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/fun/achievements.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/fun/catalog-data.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/fun/catalog.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/fun/facts.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/fun/inactivity.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/fun/session-tags.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/fun/title-system.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/persistence/repository.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/shared/image-inspection.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/shared/jpeg-sanitizer.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/storage/errors.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/storage/images.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/storage/validation.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+src/ting/engine.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,
+tests/settlement.integration.test.ts,new,,New isolated demo / portfolio packaging; not original application
+THIRD_PARTY_DEPENDENCIES.csv,new,,New isolated demo / portfolio packaging; not original application
+tsconfig.json,adapted,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,Include offline demo host in TypeScript type checking.
+vite.config.ts,original,dac8bf5d2002a8897ba03ad1fbfc620d5deb5ed0,

@@ -1,0 +1,282 @@
+@layer components {
+  .table-activity-section {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .table-activity-section .section-heading {
+    margin-bottom: 0;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .table-activity-section .section-heading h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .table-activity-section .section-heading .text-button {
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 500;
+    min-height: 28px;
+  }
+  .activity-snapshot-row {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) auto;
+    column-gap: 6px;
+    align-items: start;
+    min-height: 50px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .activity-snapshot-icon {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 3px;
+  }
+  .activity-snapshot-copy {
+    display: contents;
+  }
+  .activity-primary {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    margin: 0;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+  .activity-player {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .activity-verb {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-muted);
+  }
+  .activity-event {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .activity-description {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    min-width: 0;
+    margin: 2px 0 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    overflow: hidden;
+    overflow-wrap: anywhere;
+  }
+  .activity-snapshot-row time {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-muted);
+    white-space: nowrap;
+    align-self: start;
+    padding-top: 2px;
+    text-align: right;
+  }
+  .activity-snapshot-empty {
+    margin: 4px 0;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .activity-stats-label {
+    display: block;
+    margin: 12px 0 7px;
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .table-activity-section .quick-grid {
+    margin-top: 0;
+  }
+  .table-activity-section .quick-card {
+    min-height: 88px;
+    padding: 8px 6px;
+    gap: 4px;
+    grid-template-rows: 18px 1fr auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .table-activity-section .quick-card strong {
+    font-size: clamp(22px, 5.7vw, 24px);
+  }
+  .table-activity-section .quick-player {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .table-activity-section .quick-card small {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .table-activity-section .quick-icon {
+    font-size: 16px;
+  }
+  .table-activity-section .stats-link {
+    min-height: 22px;
+    margin-top: 0;
+  }
+  .table-appeal {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0 10px;
+    min-width: 0;
+  }
+  .table-appeal.full {
+    margin: 0 0 14px;
+  }
+  .fun-activity-history-label {
+    margin: 8px 0 4px;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .appeal-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    min-width: 0;
+  }
+  .appeal-title strong {
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+  }
+  .appeal-title time {
+    flex-shrink: 0;
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+  }
+  .appeal-status {
+    margin: 6px 0 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .appeal-status strong,
+  .appeal-status small {
+    display: block;
+    line-height: 1.35;
+  }
+  .appeal-status small {
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .appeal-people {
+    display: grid;
+    gap: 5px;
+  }
+  .appeal-person-row {
+    display: grid;
+    grid-template-columns: 78px minmax(0, 1fr);
+    gap: 6px;
+    align-items: baseline;
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.35;
+  }
+  .appeal-person-row span {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .appeal-person-row strong {
+    min-width: 0;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+  }
+  .appeal-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    margin-top: 8px;
+  }
+  .appeal-actions button {
+    min-width: 0;
+    min-height: 34px;
+    padding: 4px 2px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text-primary);
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .appeal-actions button.selected {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .appeal-source {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--accent);
+  }
+  .appeal-fab-chip {
+    position: fixed;
+    right: max(20px, calc((100vw - 520px) / 2 + 20px));
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    z-index: 15;
+    padding: 6px 10px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--accent);
+    font-size: 11px;
+    white-space: nowrap;
+    box-shadow: 0 0 0 4px var(--bg);
+  }
+  .appeal-banner {
+    position: fixed;
+    z-index: 35;
+    left: max(12px, calc((100vw - 440px) / 2));
+    right: max(12px, calc((100vw - 440px) / 2));
+    top: calc(100px + env(safe-area-inset-top));
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: 0 8px 32px #0009;
+    padding: 12px 14px;
+  }
+  .appeal-banner strong {
+    font-size: 14px;
+  }
+  .appeal-banner p {
+    margin: 4px 0 8px;
+    color: var(--text-secondary);
+    font-size: 12px;
+  }
+  .appeal-banner-close {
+    float: right;
+    color: var(--text-muted);
+    font-size: 21px;
+    line-height: 1;
+  }
+  .appeal-banner-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .appeal-banner-actions button {
+    padding: 7px 2px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 11px;
+  }
+}

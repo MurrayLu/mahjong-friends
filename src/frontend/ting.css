@@ -1,0 +1,278 @@
+@layer components {
+  .ting-page {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
+  }
+  .ting-intro {
+    margin: 0 0 6px;
+    font-size: 11px;
+  }
+  .ting-picker-title {
+    margin: 4px 0 6px;
+    font-size: 16px;
+  }
+  .ting-hand-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ting-hand-header h2 {
+    margin: 0;
+    font-size: 16px;
+  }
+  .ting-hand-header button {
+    min-height: 44px;
+  }
+  .ting-count {
+    margin: 0 0 6px;
+    color: var(--accent);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+  }
+  .ting-hand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: flex-start;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  .ting-hand p {
+    margin: 8px 0;
+    font-size: 12px;
+  }
+  .mahjong-face {
+    display: inline-flex;
+    width: 100%;
+    aspect-ratio: 3/4;
+    flex-shrink: 0;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 1px;
+    border-radius: 2px;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .mahjong-face img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .mahjong-fallback {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    color: #222;
+    font-size: 12px;
+  }
+  .ting-held {
+    width: 32px;
+    min-height: 46px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .ting-picker {
+    display: grid;
+    gap: 4px;
+    width: min(100%, 430px);
+    margin: 0 0 12px;
+  }
+  .ting-suit-row {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: clamp(2px, 0.8vw, 4px);
+  }
+  .ting-tile {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-width: 0;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    padding: 1px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+  }
+  .ting-tile[data-selected="true"] {
+    outline: 1px solid var(--accent);
+    outline-offset: 0;
+  }
+  .ting-copy-count {
+    position: absolute;
+    right: -2px;
+    bottom: -3px;
+    background: var(--surface-elevated);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0 2px;
+    font-size: 8px;
+    line-height: 1.2;
+  }
+  .ting-tile:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  .ting-tile[data-selected="true"]:disabled {
+    opacity: 0.75;
+  }
+  .ting-results {
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+  }
+  .ting-results h2 {
+    font-size: 15px;
+    margin: 0 0 5px;
+  }
+  .ting-current-result {
+    padding: 9px 0 8px;
+  }
+  .ting-current-result h2 {
+    font-size: 16px;
+  }
+  .ting-current-result > p {
+    margin: 3px 0;
+    font-size: 13px;
+  }
+  .ting-count-disclaimer {
+    display: block;
+    font-size: 10px;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .ting-total-waits {
+    color: var(--accent);
+    font-size: 13px !important;
+    font-variant-numeric: tabular-nums;
+  }
+  .ting-waits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 6px 0;
+  }
+  .ting-wait-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 38px;
+    padding: 3px 7px 3px 3px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+  }
+  .ting-wait-item .mahjong-face {
+    width: 24px;
+  }
+  .ting-discards {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0;
+  }
+  .ting-discards li {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+    padding: 8px 0;
+  }
+  .ting-discards small {
+    grid-column: 3;
+    grid-row: 1;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .ting-discard-face {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 11px;
+  }
+  .ting-discard-face .mahjong-face {
+    width: 38px;
+  }
+  .ting-advice-waits {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+  .ting-advice-waits .mahjong-face {
+    width: 29px;
+  }
+  .ting-suggestions {
+    padding-top: 9px;
+  }
+  .ting-suggestions > p {
+    margin: 4px 0;
+    font-size: 12px;
+  }
+  .ting-tool-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 44px;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 10px 8px;
+  }
+  @media (max-width: 374px) {
+    .ting-page.page-content {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    .ting-discards li {
+      grid-template-columns: 48px minmax(0, 1fr) auto;
+      gap: 5px;
+    }
+    .ting-advice-waits {
+      gap: 3px;
+    }
+    .ting-advice-waits .mahjong-face {
+      width: 25px;
+    }
+    .ting-held {
+      width: 27px;
+      min-height: 36px;
+    }
+  }
+}
+@layer components {
+  .ting-page.page-content {
+    padding: 8px 12px calc(40px + env(safe-area-inset-bottom));
+  }
+  .app-shell:has(.ting-page) {
+    --app-header-height: calc(66px + env(safe-area-inset-top));
+  }
+  .app-shell:has(.ting-page) .app-header {
+    padding: calc(10px + env(safe-area-inset-top)) 12px 10px;
+  }
+  .ting-tile:focus-visible,
+  .ting-suit-row:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .ting-page .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+}

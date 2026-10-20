@@ -1,0 +1,135 @@
+@layer components {
+  .daily-report-leader {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .report-trophy {
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .daily-report-names {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-primary);
+  }
+  .daily-report-won {
+    flex-shrink: 0;
+  }
+  .daily-report-leader .amount {
+    flex-shrink: 0;
+  }
+  .report-sheet {
+    gap: 10px;
+  }
+  .report-period {
+    margin: 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+  .report-sheet .report-brand {
+    width: 150px;
+    height: 86px;
+    margin: 0 auto;
+  }
+  .report-sheet .report-room-name {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+  }
+  .report-hero {
+    text-align: center;
+    padding-top: 4px;
+  }
+  .report-hero-label {
+    color: var(--accent);
+    font-size: 13px;
+    margin: 0 0 10px;
+  }
+  .report-winners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 22px;
+  }
+  .report-winner {
+    display: grid;
+    justify-items: center;
+    gap: 7px;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .report-winner strong {
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+  .report-winner > .amount {
+    font-size: clamp(30px, 9vw, 42px);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .report-hands {
+    margin: 0;
+    padding: 5px 0 8px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-primary);
+  }
+  .report-hands span {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .report-sheet .report-expand {
+    padding: 0 2px;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+  .report-expand svg {
+    color: var(--accent);
+  }
+  .report-privacy {
+    margin: 4px 0 12px;
+    text-align: center;
+    color: var(--accent);
+    font-size: 15px;
+  }
+  .report-sheet .report-results-heading {
+    font-size: 13px;
+    margin: 0;
+    color: var(--text-secondary);
+  }
+  .report-copy {
+    min-height: 44px;
+  }
+  .report-image-preview {
+    color: var(--text-secondary);
+    font-size: 12px;
+  }
+  .report-image-preview summary {
+    min-height: 44px;
+    cursor: pointer;
+  }
+  .report-image-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .report-image-preview a {
+    min-height: 44px;
+    color: var(--accent);
+  }
+  .session-card.expanded .session-actions .session-action-appeal {
+    color: var(--accent);
+  }
+  @media (max-width: 390px) {
+    .daily-report-won {
+      display: none;
+    }
+  }
+}

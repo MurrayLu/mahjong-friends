@@ -1,0 +1,54 @@
+.rate-preset-editor {
+  margin: 20px 0 14px;
+  min-width: 0;
+}
+.rate-preset-editor .subheading {
+  margin: 0;
+}
+.rate-preset-editor .rate-preset-help {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.rate-preset-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.rate-preset-chips > .chip {
+  flex: 0 0 auto;
+}
+.rate-preset-option {
+  position: relative;
+  display: inline-flex;
+  max-width: 100%;
+}
+.rate-preset-option .chip {
+  overflow-wrap: anywhere;
+}
+.rate-preset-option.custom-rate .chip {
+  padding-right: 30px;
+}
+.rate-preset-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  min-height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 18px;
+  border-radius: 50%;
+}
+.rate-custom-editor {
+  margin-top: 12px;
+}
+.rate-custom-editor .two-fields {
+  min-width: 0;
+}
+.rate-custom-editor input {
+  min-width: 0;
+  width: 100%;
+}
